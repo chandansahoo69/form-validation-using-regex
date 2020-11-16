@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lg-lightcolor: linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0.6));
+    --lg-color: linear-gradient(to left,#74ebd5,#9face6);
+}
+body{
+    background: url('background-1\ copy.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    overflow: hidden;
+    width: 50%;
+}
+.header{
+    background: var(--lg-color);
+    padding: 30px 0;
+}
+.header h2{
+    color: #222;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    padding: 2rem;
+}
+.form-control{
+    margin-bottom: 1.8rem;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+.form-control input{
+    width: 100%;
+    display: block;
+    border: 2px solid #F0F0F0;
+    font-size: 1.1rem;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    position: absolute;
+    right: 2%;
+    top: 2.3rem;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+span.show{
+    position: absolute;
+    right: 10px;
+    top: 2.3rem;
+    color: #111;
+    font-size: .9rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    visibility: visible;
+}
+span.show i{
+    color: #2ecc71;
+}
+.form .btn{
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .6rem 0;
+    margin-top: 1.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+}
+.form .btn:hover{
+    background: linear-gradient(to right,#74ebd5,#9face6);
+}
